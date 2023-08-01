@@ -1,0 +1,534 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.section-header {
+    margin-bottom: 40px;
+}
+.section-header h2{
+    color: #14AEDC;
+    font-size: 45px;
+    font-weight: 700;
+}
+.section-header h2 span {
+    color: #00428E;
+}
+
+.section-header h3{
+    color: #00428E;
+    font-size: 45px;
+    font-weight: 700;
+}
+.hide-scroll {
+    visibility: hidden;
+}
+.animated {
+    visibility: visible;
+}
+.navbar-nav a {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar-light .navbar-brand {
+    color: #00428E;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Initial state */
+.navbar-light .navbar-brand img, .navbar-light .navbar-brand .title {
+    transform: translateX(-100%); /* Start off-screen (left side) */
+    opacity: 0; /* Start invisible */
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out; /* Adjust duration as needed */
+    transition-delay: 1s; /* Start transition 1 second after page load */
+}
+
+.navbar-collapse {
+    transform: translateX(100%); /* Start off-screen (right side) */
+    transition: transform 2s ease-in-out; /* Adjust duration as needed */
+    transition-delay: 1s; /* Start transition 1 second after page load */
+}
+
+.navbar-light .navbar-brand img {
+    width: 100px;
+    height: auto;
+}
+
+.navbar-light .navbar-brand span {
+    color: #14AEDC;
+}
+.section-padding{
+    padding: 80px 0;
+}
+.w-100 {
+    height: 100vh;
+}
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: .3;
+    background: #fff;
+}
+
+/* Final state */
+.animate {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+.carousel{
+	background-image: url(img/banner.png);
+	background-size: cover;
+	background-position: center;
+}
+.carousel::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.8));
+}
+.carousel-item {
+	height: 100vh;
+	min-height: 300px;
+}
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+    width: 70%;  /* Set the width of the caption box */
+    left: 15%;   /* Center the caption box */
+    background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+    padding: 20px; /* add some padding so text isn't up against the box edges */
+	border-radius: 10px;
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	margin-top: 25px;
+	color: #14AEDC;
+	font-weight: 700;
+	text-align: left;
+}
+.carousel-caption h5 span {
+	color: #002C5A;
+}
+.carousel-caption p {
+	width: 60%;
+	font-size: 18px;
+	line-height: 1.8;
+	color: #002C5A;
+	text-align: left;
+	font-weight: bold;
+}
+.carousel-caption a {
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #002C5A;
+	padding: 5px 20px;
+	display: inline-block;
+	color: #fff;
+	margin-top: 15px;
+	border-radius: 5px;
+}
+
+/* about us */
+
+.img-area img{
+	width: 100% !important;
+}
+.about-text h2 {
+	font-size: 45px;
+	font-weight: 700;
+	color: #14AEDC;
+}
+.about-text h2 span{
+	color: #002C5A;
+}
+.about-text .btn {
+	background: #002C5A;
+	color: #fff;
+}
+
+/* New hover state */
+.about-text .btn:hover {
+	background: #001F3F;
+	color: #fff;
+}
+
+/* affiliated health plans */
+
+.afp-img img {
+    width: 100%;
+}
+
+.afp .single-box img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    flex-grow: 1;
+}
+
+.single-box {
+    padding: 20px;
+}
+
+.single-box i {
+    font-size: 35px;
+    margin-bottom: 25px;
+    color: #E53F29;
+}
+
+.single-box h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: #002C5A;
+}
+
+.row.equal-height {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equal-height > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.single-box {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* services */
+
+.card {
+    background: #14AEDC;
+    color: #fff;
+    padding: 30px 15px;
+    margin: 0.5em;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.card-body {
+    display: grid;  /* change from flex to grid */
+    grid-template-rows: auto 1fr auto;  /* create 3 grid rows */
+}
+
+.card-content {
+    min-height: 220px; /* Adjust this value according to your needs */
+}
+
+.btn {
+    grid-row-start: 3;  /* assign the button to the third grid row */
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.btn {
+    background-color: #002C5A;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #001F3F;
+    color: white;
+}
+
+.row.equal {
+    display: flex;
+    flex-wrap: wrap;
+}
+  /* testimonial */
+  .imgBox {
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	border-radius: 50%;
+	margin: 0 auto 25px;
+}
+	.imgBox img{
+		width: 100%;
+	}
+  .single-client {
+	box-shadow: 0 2px 20px rgba(0,0,0,0.3);
+	padding: 30px 15px;
+  }
+  .single-client h2 {
+	color: #002C5A;
+	font-family: 'Bebas Neue', sans-serif;
+  }
+  .single-client h5 {
+	color: #002C5A;
+	font-weight: 600;
+	font-size: 15px;
+  }
+  .single-client h5 span{
+	font-size: 12px;
+	text-transform: uppercase;
+  }
+
+  /* contact */
+
+  .left-contact {
+	background: #002C5A;
+	padding: 60px;
+	color: #fff;
+}
+.left-contact h3 {
+	font-family: 'Bebas Neue', sans-serif;
+	margin-bottom: 20px;
+}
+label {
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 28px;
+	margin: 10px 0;
+}
+.contact .btn {
+	background: #002C5A;
+	color: #fff;
+	display: inline-block;
+	margin-top: 30px;
+}
+
+/*external page banner*/
+
+.banner-section {
+	background-image: url('img/banner.png');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	display: flex;
+	justify-content: center; /* Centering horizontally */
+	align-items: center; /* Centering vertically */
+	color: #fff;
+  }
+  
+  .banner-content {
+	text-align: center;
+	background: rgba(255, 255, 255, 0.8); /* semi-transparent white */
+	padding: 20px; /* add some padding so text isn't up against the box edges */
+	margin-top: 80px; /* Add some space at the top */
+	border-radius: 10px;
+  }
+  
+  .banner-content h2 {
+	font-size: 45px;
+	color: #14AEDC;
+	font-weight: 700;
+  }
+  
+  .banner-content h2 span {
+	color: #002C5A;
+  }
+  
+  .banner-content p {
+	font-size: 18px;
+	color: #002C5A;
+	margin-bottom: 0; /* remove bottom margin from the paragraph so it fits better within the semi-transparent box */
+	font-weight: bold;
+  }
+
+
+/* footer */
+
+footer {
+	background: #002C5A;
+	padding: 35px 0;
+	color: #fff;
+  }
+  .socials i {
+	font-size: 25px;
+	margin: 0 15px;
+  }
+
+/* services external page */
+
+.services-section {
+  background-color: #F8F8F8;
+}
+
+.nav-pills .nav-link {
+  color: #002C5A;
+  font-weight: 600;
+}
+
+.nav-pills .nav-link.active {
+  color: #14AEDC;
+  background-color: #F8F8F8;
+}
+
+.tab-content {
+  padding: 1rem;
+  border: 1px solid #E1E5EA;
+  border-top: none;
+  border-radius: 0 10px 10px 10px;
+  background-color: #fff;
+}
+
+li[data-bs-toggle] {
+  cursor: pointer;
+}
+
+  /* responsive */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar-light .navbar-brand img {
+        width: 75px;
+        height: auto;
+    }
+
+    .navbar-light .navbar-brand .title div,
+    .navbar-light .navbar-brand .title span {
+        font-size: 18px;
+    }
+	.about-text h2 {
+		margin: 20px 0;
+	}
+	.single-services {
+		margin-bottom: 30px;
+	}
+	.single-box {
+		margin-bottom: 30px;
+	}
+	.single-client {
+		margin-bottom: 35px;
+	}
+	.left-contact {
+		margin-bottom: 30px;
+	}
+	.banner-content h2 {
+		font-size: 30px;
+	  }
+	
+	  .banner-content p {
+		font-size: 16px;
+	  }
+
+    .card-body {
+        display: grid;  /* change from flex to grid */
+        grid-template-rows: auto 1fr auto;  /* create 3 grid rows */
+    }
+
+    .btn {
+        grid-row-start: 3;  /* assign the button to the third grid row */
+    }
+
+    .card-content {
+        min-height: 220px; /* Adjust this value according to your needs */
+    }
+}
+
+@media only screen and (max-width: 767px) {
+	.navbar-light .navbar-brand img {
+        width: 50px;
+        height: auto;
+    }
+
+    .navbar-light .navbar-brand .title div,
+    .navbar-light .navbar-brand .title span {
+        font-size: 14px;
+    }
+
+	.navbar-nav {
+		text-align: center;
+	}
+	.carousel-caption {
+        bottom: 295px;
+        width: 90%;  /* Adjust the width for smaller screens */
+        left: 5%;   /* Adjust the centering for smaller screens */
+    }
+	.carousel-caption h5 {
+		font-size: 20px;
+	}
+	.carousel-caption p {
+		width: 100%;
+		font-size: 10px;
+	}
+	.carousel-caption a {
+		padding: 10px 15px;
+		font-size: 14px;
+	}
+	.section-header h2 {
+		font-size: 30px;
+	}
+	.about-text h2 {
+		font-size: 30px;
+		margin: 15px 0;
+	}
+	.single-services {
+		padding: 15px;
+		margin-bottom: 30px;
+	}
+	.single-box {
+		margin-bottom: 30px;
+	}
+	.single-client {
+		margin-bottom: 30px;
+	}
+	.left-contact h3 {
+		text-align: center;
+	}
+	.left-contact p {
+		text-align: center;
+	}
+	.card {
+        margin-bottom: 30px;
+        padding: 15px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .card-text {
+        font-size: 14px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+	.banner-content h2 {
+		font-size: 25px;
+	  }
+	
+	  .banner-content p {
+		font-size: 14px;
+	  }
+
+    .card-body {
+        display: grid;  /* change from flex to grid */
+        grid-template-rows: auto 1fr auto;  /* create 3 grid rows */
+    }
+
+    .btn {
+        grid-row-start: 3;  /* assign the button to the third grid row */
+    }
+
+    .card-content {
+        min-height: 180px; /* Adjust this value according to your needs */
+    }
+}
