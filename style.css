@@ -1,8 +1,18 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
-.section-header {
-    margin-bottom: 40px;
+.section-header{
+    color: #14AEDC;
+    font-size: 45px;
+    font-weight: 700;
+}
+.section-header p{
+    color: #000000;
+    font-size: 22.5px;
+    font-weight: 700;
+}
+.section-header span {
+    color: #00428E;
 }
 .section-header h2{
     color: #14AEDC;
@@ -12,18 +22,12 @@
 .section-header h2 span {
     color: #00428E;
 }
-
 .section-header h3{
     color: #00428E;
     font-size: 45px;
     font-weight: 700;
 }
-.hide-scroll {
-    visibility: hidden;
-}
-.animated {
-    visibility: visible;
-}
+
 .navbar-nav a {
     font-size: 16px;
     font-weight: 700;
@@ -37,18 +41,21 @@
     letter-spacing: 2px;
 }
 
-/* Initial state */
-.navbar-light .navbar-brand img, .navbar-light .navbar-brand .title {
-    transform: translateX(-100%); /* Start off-screen (left side) */
-    opacity: 0; /* Start invisible */
-    transition: transform 2s ease-in-out, opacity 2s ease-in-out; /* Adjust duration as needed */
-    transition-delay: 1s; /* Start transition 1 second after page load */
+@keyframes slide-in {
+    0% {
+        transform: translateX(1000%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
-.navbar-collapse {
-    transform: translateX(100%); /* Start off-screen (right side) */
-    transition: transform 2s ease-in-out; /* Adjust duration as needed */
-    transition-delay: 1s; /* Start transition 1 second after page load */
+.navbar-brand,
+.navbar-light .navbar-brand img, 
+.navbar-light .navbar-brand .title {
+    opacity: 0;
 }
 
 .navbar-light .navbar-brand img {
@@ -74,15 +81,29 @@
 
 /* Final state */
 .animate {
-    transform: translateX(0);
+    animation: slide-in 2s forwards;
     opacity: 1;
 }
 
+/* Quick animation */
+.animate-quick {
+    animation: slide-in 0.5s forwards; /* Change the duration as you want */
+    opacity: 1;
+}
+
+.slide-from-left {
+    animation: slideLeft 2s forwards;
+  }
+  @keyframes slideLeft {
+    from {transform: translateX(-100%);}
+    to {transform: translateX(0);}
+  }
 
 .carousel{
 	background-image: url(img/banner.png);
 	background-size: cover;
 	background-position: center;
+    animation: slide-in 2s forwards;
 }
 .carousel::after {
     content: "";
@@ -120,7 +141,7 @@
 	width: 60%;
 	font-size: 18px;
 	line-height: 1.8;
-	color: #002C5A;
+	color: #000000;
 	text-align: left;
 	font-weight: bold;
 }
@@ -356,6 +377,42 @@ label {
 	font-weight: bold;
   }
 
+  /* about us external page */
+
+  .team-card {
+    background: #14AEDC;
+    color: #fff;
+    padding: 30px 15px;
+    margin: 0.5em;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    height: 350px;
+}
+
+.team-card-body {
+    flex: 1 0 auto;  /* this will make the card body content automatically adjust and never overflow */
+    font-size: 16px;
+    text-align: left;
+}
+
+.team-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.team-card-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-card {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 30px 15px;
+    margin: 0.5em;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
 
 /* footer */
 
@@ -372,30 +429,42 @@ footer {
 /* services external page */
 
 .services-section {
-  background-color: #F8F8F8;
-}
+    background-color: #F8F8F8;
+  }
+  
+  .nav-pills .nav-link {
+    color: #002C5A;
+    font-weight: 600;
+  }
+  
+  .nav-pills .nav-link.active {
+    color: #14AEDC;
+    background-color: #F8F8F8;
+  }
+  
+  .tab-content {
+    padding: 1rem;
+    border: 1px solid #E1E5EA;
+    border-top: none;
+    border-radius: 0 10px 10px 10px;
+    background-color: #fff;
+  }
+  
+  li[data-bs-toggle] {
+    cursor: pointer;
+  }
+  
+  li[data-bs-toggle="collapse"]:active {
+    color: #002C5A; /* Replace with your preferred color */
+  }
+  
+  li[data-bs-toggle="collapse"].active {
+    color: #14AEDC; /* Replace with your preferred color */
+  }
 
-.nav-pills .nav-link {
-  color: #002C5A;
-  font-weight: 600;
-}
-
-.nav-pills .nav-link.active {
-  color: #14AEDC;
-  background-color: #F8F8F8;
-}
-
-.tab-content {
-  padding: 1rem;
-  border: 1px solid #E1E5EA;
-  border-top: none;
-  border-radius: 0 10px 10px 10px;
-  background-color: #fff;
-}
-
-li[data-bs-toggle] {
-  cursor: pointer;
-}
+  .collapse p {
+    color: #002C5A; /* Replace with your preferred color for the expanded text */
+  }
 
   /* responsive */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
