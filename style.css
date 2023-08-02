@@ -449,6 +449,9 @@ label {
   }
 
 /* footer */
+.map-container1{
+    margin-bottom: 3%;
+}
 
 footer {
 	background: #002C5A;
