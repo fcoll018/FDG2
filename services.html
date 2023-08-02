@@ -14,18 +14,18 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
-			<a class="navbar-brand d-flex align-items-center" href="#home">
-				<img src="img/floridadoctorsgroup.png" alt="Logo" width="100" height="100">
-				<div class="title">
+			<a class="navbar-brand animate d-flex align-items-center" href="index.html#home">
+				<img class="logo animate" src="img/floridadoctorsgroup.png" alt="Logo" width="100" height="100">
+				<div class="title animate">
 					<span>Florida</span>
-        			<div>DOCTORS</div>
-        			<div>GROUP</div>
+					<div>DOCTORS</div>
+					<div>GROUP</div>
 				</div>
-			</a>			
+			</a>
 			<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse navbar-animation" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
 						<a class="nav-link" href="index.html#home">Home</a>
@@ -58,7 +58,7 @@
   </section>
 
     <!-- Services Section -->
-    <section class="services-section py-5">
+    <section class="services-section py-5 animate">
         <div class="container">
           <div class="row">
             <div class="col-md-3">
@@ -91,7 +91,7 @@
                     <!-- More content... -->
                   </ul>
                 </div>
-                <div class="tab-pane fade show active" id="v-pills-service2" role="tabpanel" aria-labelledby="v-pills-service2-tab">
+                <div class="tab-pane fade" id="v-pills-service2" role="tabpanel" aria-labelledby="v-pills-service2-tab">
                     <!-- Add content about this service -->
                     <h2>Risk & Operational Management</h2>
                     <ul>
@@ -106,7 +106,7 @@
                       <!-- More content... -->
                     </ul>
                   </div>
-                <div class="tab-pane fade show active" id="v-pills-service3" role="tabpanel" aria-labelledby="v-pills-service3-tab">
+                <div class="tab-pane fade" id="v-pills-service3" role="tabpanel" aria-labelledby="v-pills-service3-tab">
                     <!-- Add content about this service -->
                     <h2>Tools & Equipment</h2>
                     <ul>
@@ -117,7 +117,7 @@
                       <!-- More content... -->
                     </ul>
                   </div>
-                <div class="tab-pane fade show active" id="v-pills-service4" role="tabpanel" aria-labelledby="v-pills-service4-tab">
+                <div class="tab-pane fade" id="v-pills-service4" role="tabpanel" aria-labelledby="v-pills-service4-tab">
                     <!-- Add content about this service -->
                     <h2>Marketing</h2>
                     <ul>
@@ -128,7 +128,7 @@
                       <!-- More content... -->
                     </ul>
                   </div>
-                <div class="tab-pane fade show active" id="v-pills-service5" role="tabpanel" aria-labelledby="v-pills-service5-tab">
+                <div class="tab-pane fade" id="v-pills-service5" role="tabpanel" aria-labelledby="v-pills-service5-tab">
                     <!-- Add content about this service -->
                     <h2>EMR System</h2>
                     <ul>
@@ -139,7 +139,7 @@
                       <!-- More content... -->
                     </ul>
                   </div>
-                <div class="tab-pane fade show active" id="v-pills-service6" role="tabpanel" aria-labelledby="v-pills-service6-tab">
+                <div class="tab-pane fade" id="v-pills-service6" role="tabpanel" aria-labelledby="v-pills-service6-tab">
                     <!-- Add content about this service -->
                     <h2>Training & Education</h2>
                     <ul>
@@ -150,7 +150,7 @@
                       <!-- More content... -->
                     </ul>
                   </div>
-                <div class="tab-pane fade show active" id="v-pills-service7" role="tabpanel" aria-labelledby="v-pills-service7-tab">
+                <div class="tab-pane fade" id="v-pills-service7" role="tabpanel" aria-labelledby="v-pills-service7-tab">
                     <!-- Add content about this service -->
                     <h2>Reports & Analytics</h2>
                     <ul>
@@ -161,7 +161,7 @@
                       <!-- More content... -->
                     </ul>
                   </div>
-                <div class="tab-pane fade show active" id="v-pills-service8" role="tabpanel" aria-labelledby="v-pills-service8-tab">
+                <div class="tab-pane fade" id="v-pills-service8" role="tabpanel" aria-labelledby="v-pills-service8-tab">
                     <!-- Add content about this service -->
                     <h2>Pharmacy Services</h2>
                     <ul>
@@ -179,7 +179,7 @@
       </section>
       
       
-      <footer>
+  <footer>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -203,16 +203,76 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
     
     <script>
-    $(document).ready(function() {
-        let hash = window.location.hash;
-        if (hash) {
-            let navLink = $(`.nav-link[href="${hash}"]`);
-            if (navLink.length) {
-                $('.nav-link.active, .tab-pane.active').removeClass('active show');
-                navLink.addClass('active');
-                $(hash).addClass('show active');
-            }
+     function applyNavbarAnimation() {
+    var isNavbarCollapsed = $('.navbar-toggler').is(':visible');
+    var logoClass = isNavbarCollapsed ? 'animate-quick' : 'animate'; // for logo
+    var navLinkClass = isNavbarCollapsed ? 'animate-quick' : 'animate'; // for navlinks
+
+    $('.navbar-brand .logo').removeClass('animate animate-quick').addClass(logoClass); // Apply to logo
+    $('.navbar-brand .title, #navbarSupportedContent').removeClass('animate animate-quick').addClass(navLinkClass); // Apply to navlinks
+}
+
+$(window).on('load', function() {
+    // Check the current URL's query parameters and activate the corresponding navigation link and tab pane, if they exist
+    var urlParams = new URLSearchParams(window.location.search);
+    var tabId = urlParams.get('tab');
+    if (tabId) {
+        $('.nav-link.active, .tab-pane.active').removeClass('active show');
+        $(`#${tabId}`).addClass('active show');
+        $(`.nav-link[href="#${tabId}"]`).addClass('active');
+    }
+
+    // Add animations to the logo, title, and navigation bar after a delay
+    setTimeout(applyNavbarAnimation, 100); // delay in ms
+
+    // Apply animations to other sections on the services page
+    $('.service-section').addClass('animate'); // Modify the selector as needed
+
+    // Apply slide-in animation to the footer
+    $('footer').addClass('animate');
+
+    // Apply slide-in animation to banner section
+    $('.banner-section').addClass('animate');
+
+    $('li[data-bs-toggle="collapse"]').on('click', function() {
+        $(this).toggleClass('active');
+    });
+
+    $('a[href^="#"]').on('click', function(e) {
+        e.preventDefault();
+
+        var targetId = this.hash;
+        var target = $(targetId);
+
+        var animateScroll = function() {
+            var navbarHeight = $('.navbar').outerHeight();  // Moved inside the animateScroll function
+            var $targetOffsetTop = (targetId === '#home') ? 0 : target.offset().top - navbarHeight;
+
+            $('html, body').stop().animate({
+                scrollTop: $targetOffsetTop
+            }, 500, 'swing');
+        };
+
+        var navbarCollapse = $('#navbarSupportedContent');
+        if (navbarCollapse.is(':visible') && $('.navbar-toggler').is(':visible')) {
+            navbarCollapse.one('hidden.bs.collapse', animateScroll);
+            navbarCollapse.collapse('hide');
+        } else {
+            animateScroll();
         }
     });
-    </script>
+});
+
+// Add event listeners for window resize and navbar toggler click
+$(window).on('resize', function() {
+    applyNavbarAnimation();
+});
+
+$('.navbar-toggler').click(function() {
+    applyNavbarAnimation();
+});
+  </script>
+  
     
+</body>
+</html>
