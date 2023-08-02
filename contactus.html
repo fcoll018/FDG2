@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<title>Florida Doctors Group</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+			<a class="navbar-brand animate d-flex align-items-center" href="index.html#home">
+				<img class="logo animate" src="img/floridadoctorsgroup.png" alt="Logo" width="100" height="100">
+				<div class="title animate">
+					<span>Florida</span>
+					<div>DOCTORS</div>
+					<div>GROUP</div>
+				</div>
+			</a>
+			<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse navbar-animation" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#about">About Us</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#services">Services</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="index.html#ahp">Affiliated Health Plans</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="contactus.html">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+    <!-- Contact Us Banner Section -->
+<section class="banner-section">
+    <div class="container text-center">
+      <div class="banner-content">
+        <h2>Get in <span>Touch</span></h2>
+        <p>Ready to take your healthcare practice to the next level? Contact our expert team today to discuss your specific needs. We're here to support you every step of the way.</p>
+      </div>
+    </div>
+</section>
+
+<!-- Dropdown Section-->
+<section class="container my-5 animate-dropdown">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <h2>Questions? Select a Department Questionnaire</h2>
+            <p>Please choose the department you want to inquire about from the list below:</p>
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Department
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#" data-department="billing">Billing</a></li>
+                    <li><a class="dropdown-item" href="#" data-department="coding">Coding</a></li>
+                    <li><a class="dropdown-item" href="#" data-department="marketing">Marketing</a></li>
+                    <li><a class="dropdown-item" href="#" data-department="customerService">Customer Service</a></li>
+                    <li><a class="dropdown-item" href="#" data-department="referrals">Referrals Department</a></li>
+                    <li><a class="dropdown-item" href="#" data-department="finance">Finance</a></li>
+                    <li><a class="dropdown-item" href="#" data-department="contracting">Contracting</a></li>
+                    <li><a class="dropdown-item" href="#" data-department="credentialing">Credentialing</a></li>
+                    <li><a class="dropdown-item" href="#" data-department="medicalConsulting">Medical Consulting</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Billing Questionnaire -->
+<section id="billing" class="questionnaire container my-5" style="display: none;">
+    <h2>Billing</h2>
+    <form>
+        <div class="mb-3">
+            <label for="billingSystem" class="form-label">What billing system does the MSO use?</label>
+            <input type="text" class="form-control" id="billingSystem" placeholder="Enter billing system" required>
+        </div>
+        <div class="mb-3">
+            <label>Does the MSO bill Capitated members, FFS members, or both?</label>
+            <select class="form-select" id="billingMembers" aria-label="Billing Members">
+                <option selected>Choose...</option>
+                <option value="capitated">Capitated</option>
+                <option value="ffs">FFS</option>
+                <option value="both">Both</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label>Want to check when the last billing for your members was completed?</label>
+            <div>
+                <input type="radio" id="lastBillingYes" name="lastBilling" value="yes">
+                <label for="lastBillingYes">Yes</label>
+                <input type="radio" id="lastBillingNo" name="lastBilling" value="no">
+                <label for="lastBillingNo">No</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label>Would you like training for Contracted Provider Staff?</label>
+            <div>
+                <input type="radio" id="trainingYes" name="training" value="yes">
+                <label for="trainingYes">Yes</label>
+                <input type="radio" id="trainingNo" name="training" value="no">
+                <label for="trainingNo">No</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="generalBillingQuestions" class="form-label">General Billing Questions</label>
+            <textarea class="form-control" id="generalBillingQuestions" rows="4" placeholder="Enter your questions"></textarea>
+        </div>
+        <!-- Rest of the Questions... -->
+        <!-- Appointment Request -->
+        <div class="mb-3">
+            <h3>Request an Appointment:</h3>
+            <label for="groupName">Group Name</label>
+            <input type="text" class="form-control" id="groupName" required>
+            <label for="individualName">Individual's Name</label>
+            <input type="text" class="form-control" id="individualName" required>
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" required>
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            
+            <label for="requestDate">Request Date:</label>
+            <select class="form-select" id="requestDate" required>
+                <option selected>Choose...</option>
+                <option value="asap">ASAP</option>
+                <option value="thisWeek">This Week</option>
+                <option value="nextWeek">Next Week</option>
+            </select>
+            <p class="mt-3">Note: A dedicated staff member will contact you within 1-3 business days.</p>
+            <button type="submit" class="btn btn-primary mt-3">Request Appointment</button>
+        </div>        
+    </form>
+</section>
+<!-- Coding Questionnaire -->
+<section id="coding" class="questionnaire container my-5" style="display: none;">
+    <h2>Coding</h2>
+    <form>
+        <!-- Questions -->
+        <div class="mb-3">
+            <label for="hccQuestions" class="form-label">Questions on HCC?</label>
+            <textarea class="form-control" id="hccQuestions" rows="3" required></textarea>
+        </div>
+        <div class="mb-3">
+            <label for="hccTools" class="form-label">What tools or software does the MSO use for HCC coding?</label>
+            <input type="text" class="form-control" id="hccTools" required>
+        </div>
+        <div class="mb-3">
+            <label for="fdgGuidelines" class="form-label">What coding guidelines does FDG follow when reviewing charts and providing suggestions?</label>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" class="form-check-input mt-0" id="fdgGuidelines">
+                <label class="form-check-label" for="fdgGuidelines" style="font-size: 1.25rem; margin-left: 10px;">Check if interested</label>
+            </div>
+        </div>               
+        <div class="mb-3">
+            <label for="generalCodingQuestions" class="form-label">General Coding Questions</label>
+            <textarea class="form-control" id="generalCodingQuestions" rows="3" required></textarea>
+        </div>
+        <!-- Appointment Request -->
+        <div class="mb-3">
+            <h3>Request an Appointment:</h3>
+            <label for="groupName">Group Name</label>
+            <input type="text" class="form-control" id="groupName" required>
+            <label for="individualName">Individual's Name</label>
+            <input type="text" class="form-control" id="individualName" required>
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" required>
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            
+            <label for="requestDate">Request Date:</label>
+            <select class="form-select" id="requestDate" required>
+                <option selected>Choose...</option>
+                <option value="asap">ASAP</option>
+                <option value="thisWeek">This Week</option>
+                <option value="nextWeek">Next Week</option>
+            </select>
+            <p class="mt-3">Note: A dedicated staff member will contact you within 1-3 business days.</p>
+            <button type="submit" class="btn btn-primary mt-3">Request Appointment</button>
+        </div>   
+    </form>
+</section>
+<section id="marketing" class="questionnaire container my-5" style="display: none;">
+    <h2>Marketing</h2>
+    <form>
+        <!-- Questions -->
+        <div class="mb-3">
+            <label for="marketingServicesLink" class="form-label">What type of Marketing services does FDG Provide?</label>
+            <div id="marketingServicesLink">
+                <a href="services.html?tab=v-pills-service4" class="btn btn-primary">Visit Marketing Services Page</a>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="marketingSupport" class="form-label">How does my group begin to receive marketing support?</label>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" class="form-check-input mt-0" id="marketingSupport">
+                <label class="form-check-label" for="marketingSupport" style="font-size: 1.25rem; margin-left: 10px;">Check if applicable</label>
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="upcomingEvent" class="form-label">I have an upcoming Event and don't know how to file it</label>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" class="form-check-input mt-0" id="upcomingEvent">
+                <label class="form-check-label" for="upcomingEvent" style="font-size: 1.25rem; margin-left: 10px;">Check if applicable</label>
+            </div>
+        </div>
+        <!-- Appointment Request-->
+        <div class="mb-3">
+            <h3>Request an Appointment:</h3>
+            <label for="groupName">Group Name</label>
+            <input type="text" class="form-control" id="groupName" required>
+            <label for="individualName">Individual's Name</label>
+            <input type="text" class="form-control" id="individualName" required>
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" required>
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            
+            <label for="requestDate">Request Date:</label>
+            <select class="form-select" id="requestDate" required>
+                <option selected>Choose...</option>
+                <option value="asap">ASAP</option>
+                <option value="thisWeek">This Week</option>
+                <option value="nextWeek">Next Week</option>
+            </select>
+            <p class="mt-3">Note: A dedicated staff member will contact you within 1-3 business days.</p>
+            <button type="submit" class="btn btn-primary mt-3">Request Appointment</button>
+        </div>
+    </form>
+</section>
+<section id="customerService" class="questionnaire container my-5" style="display: none;">
+    <h2>Customer Service</h2>
+    <form>
+        <!-- Question: Need a copy of membership roster? -->
+        <div class="mb-3">
+            <label for="membershipRoster" class="form-label">Need a copy of membership roster?</label>
+            <div id="membershipRoster">
+                <input type="radio" name="membershipRoster" id="membershipRosterYes" value="yes">
+                <label for="membershipRosterYes">Yes</label>
+                <input type="radio" name="membershipRoster" id="membershipRosterNo" value="no">
+                <label for="membershipRosterNo">No</label>
+            </div>
+        </div>
+        <!-- Question: Want to set up training for new employee(s) on the HealthPlans portal? -->
+        <div class="mb-3">
+            <label for="trainingNewEmployees" class="form-label">Want to set up training for new employee(s) on the HealthPlans portal?</label>
+            <div id="trainingNewEmployees">
+                <input type="radio" name="trainingNewEmployees" id="trainingNewEmployeesYes" value="yes">
+                <label for="trainingNewEmployeesYes">Yes</label>
+                <input type="radio" name="trainingNewEmployees" id="trainingNewEmployeesNo" value="no">
+                <label for="trainingNewEmployeesNo">No</label>
+            </div>
+        </div>
+        <!-- Question: My members have not received their Plan ID yet -->
+        <div class="mb-3">
+            <label for="planIdReceived" class="form-label">My members have not received their Plan ID yet</label>
+            <div id="planIdReceived">
+                <input type="radio" name="planIdReceived" id="planIdReceivedYes" value="yes">
+                <label for="planIdReceivedYes">Yes</label>
+                <input type="radio" name="planIdReceived" id="planIdReceivedNo" value="no">
+                <label for="planIdReceivedNo">No</label>
+            </div>
+        </div>
+        <!-- Appointment Request-->
+        <div class="mb-3">
+            <h3>Request an Appointment:</h3>
+            <label for="groupName">Group Name</label>
+            <input type="text" class="form-control" id="groupName" required>
+            <label for="individualName">Individual's Name</label>
+            <input type="text" class="form-control" id="individualName" required>
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" required>
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            
+            <label for="requestDate">Request Date:</label>
+            <select class="form-select" id="requestDate" required>
+                <option selected>Choose...</option>
+                <option value="asap">ASAP</option>
+                <option value="thisWeek">This Week</option>
+                <option value="nextWeek">Next Week</option>
+            </select>
+            <p class="mt-3">Note: A dedicated staff member will contact you within 1-3 business days.</p>
+            <button type="submit" class="btn btn-primary mt-3">Request Appointment</button>
+        </div>
+    </form>
+</section>
+<!-- Referrals Department -->
+<section id="referrals" class="questionnaire container my-5" style="display: none;">
+    <h2>Referrals Department</h2>
+    <form>
+        <!-- Question: Need help with a referral or authorization? -->
+        <div class="mb-3">
+            <label for="referralAuthorization" class="form-label">Need help with a referral or authorization?</label>
+            <div id="referralAuthorization">
+                <input type="radio" name="referralAuthorization" id="referralAuthorizationYes" value="yes">
+                <label for="referralAuthorizationYes">Yes</label>
+                <input type="radio" name="referralAuthorization" id="referralAuthorizationNo" value="no">
+                <label for="referralAuthorizationNo">No</label>
+            </div>
+        </div>
+        <!-- Question: Want to set up training for new employee(s) on the HealthPlans portal for referrals and authorizations? -->
+        <div class="mb-3">
+            <label for="trainingReferrals" class="form-label">Want to set up training for new employee(s) on the HealthPlans portal for referrals and authorizations?</label>
+            <div id="trainingReferrals">
+                <input type="radio" name="trainingReferrals" id="trainingReferralsYes" value="yes">
+                <label for="trainingReferralsYes">Yes</label>
+                <input type="radio" name="trainingReferrals" id="trainingReferralsNo" value="no">
+                <label for="trainingReferralsNo">No</label>
+            </div>
+        </div>
+        <!-- Question: Need assistance with finding a specialist for a patient? -->
+        <div class="mb-3">
+            <label for="findingSpecialist" class="form-label">Need assistance with finding a specialist for a patient?</label>
+            <div id="findingSpecialist">
+                <input type="radio" name="findingSpecialist" id="findingSpecialistYes" value="yes">
+                <label for="findingSpecialistYes">Yes</label>
+                <input type="radio" name="findingSpecialist" id="findingSpecialistNo" value="no">
+                <label for="findingSpecialistNo">No</label>
+            </div>
+        </div>
+        <!-- Appointment Request-->
+        <div class="mb-3">
+            <h3>Request an Appointment:</h3>
+            <label for="groupName">Group Name</label>
+            <input type="text" class="form-control" id="groupName" required>
+            <label for="individualName">Individual's Name</label>
+            <input type="text" class="form-control" id="individualName" required>
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" required>
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            
+            <label for="requestDate">Request Date:</label>
+            <select class="form-select" id="requestDate" required>
+                <option selected>Choose...</option>
+                <option value="asap">ASAP</option>
+                <option value="thisWeek">This Week</option>
+                <option value="nextWeek">Next Week</option>
+            </select>
+            <p class="mt-3">Note: A dedicated staff member will contact you within 1-3 business days.</p>
+            <button type="submit" class="btn btn-primary mt-3">Request Appointment</button>
+        </div>
+    </form>
+</section>
+<!-- Finance -->
+<section id="finance" class="questionnaire container my-5" style="display: none;">
+    <h2>Finance</h2>
+    <form>
+        <!-- Question: Haven't received your capitation check? -->
+        <div class="mb-3">
+            <label for="receivedCapitationCheck" class="form-label">Haven't received your capitation check?</label>
+            <div id="receivedCapitationCheck">
+                <input type="radio" name="receivedCapitationCheck" id="receivedCapitationCheckYes" value="yes">
+                <label for="receivedCapitationCheckYes">Yes</label>
+                <input type="radio" name="receivedCapitationCheck" id="receivedCapitationCheckNo" value="no">
+                <label for="receivedCapitationCheckNo">No</label>
+            </div>
+        </div>
+        <!-- Question: When should you expect your capitation check? -->
+        <div class="mb-3">
+            <label for="expectCapitationCheck" class="form-label">When should you expect your capitation check?</label>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" class="form-check-input mt-0" id="expectCapitationCheck">
+                <label class="form-check-label" for="expectCapitationCheck" style="font-size: 1.25rem; margin-left: 10px;">Check if interested</label>
+            </div>
+        </div>
+        <!-- Question: Does FDG have your EFT on file? -->
+        <div class="mb-3">
+            <label for="eftOnFile" class="form-label">Does FDG have your EFT on file?</label>
+            <div id="eftOnFile">
+                <input type="radio" name="eftOnFile" id="eftOnFileYes" value="yes">
+                <label for="eftOnFileYes">Yes</label>
+                <input type="radio" name="eftOnFile" id="eftOnFileNo" value="no">
+                <label for="eftOnFileNo">No</label>
+            </div>
+        </div>
+        <!-- Question: Missing payments for capitation? -->
+        <div class="mb-3">
+            <label for="missingPayments" class="form-label">Missing payments for capitation?</label>
+            <div id="missingPayments">
+                <input type="radio" name="missingPayments" id="missingPaymentsYes" value="yes">
+                <label for="missingPaymentsYes">Yes</label>
+                <input type="radio" name="missingPayments" id="missingPaymentsNo" value="no">
+                <label for="missingPaymentsNo">No</label>
+            </div>
+        </div>
+        <!-- Question: Want FDG to bill your FFS members? -->
+        <div class="mb-3">
+            <label for="billFFSMembers" class="form-label">Want FDG to bill your FFS members?</label>
+            <div id="billFFSMembers">
+                <input type="radio" name="billFFSMembers" id="billFFSMembersYes" value="yes">
+                <label for="billFFSMembersYes">Yes</label>
+                <input type="radio" name="billFFSMembers" id="billFFSMembersNo" value="no">
+                <label for="billFFSMembersNo">No</label>
+            </div>
+        </div>
+        <!-- Appointment Request-->
+        <div class="mb-3">
+            <h3>Request an Appointment:</h3>
+            <label for="groupName">Group Name</label>
+            <input type="text" class="form-control" id="groupName" required>
+            <label for="individualName">Individual's Name</label>
+            <input type="text" class="form-control" id="individualName" required>
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" required>
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            
+            <label for="requestDate">Request Date:</label>
+            <select class="form-select" id="requestDate" required>
+                <option selected>Choose...</option>
+                <option value="asap">ASAP</option>
+                <option value="thisWeek">This Week</option>
+                <option value="nextWeek">Next Week</option>
+            </select>
+            <p class="mt-3">Note: A dedicated staff member will contact you within 1-3 business days.</p>
+            <button type="submit" class="btn btn-primary mt-3">Request Appointment</button>
+        </div>
+    </form>
+</section>
+<!-- CONTRACTING SECTION -->
+<section id="contracting" class="questionnaire container my-5" style="display: none;">
+    <h2>Contracting</h2>
+    <form>
+        <!-- Question: Interested in becoming an FDG Provider? -->
+        <div class="mb-3">
+            <label for="becomingProvider" class="form-label">Interested in becoming an FDG Provider?</label>
+            <div id="becomingProvider">
+                <input type="radio" name="becomingProvider" id="becomingProviderYes" value="yes">
+                <label for="becomingProviderYes">Yes</label>
+                <input type="radio" name="becomingProvider" id="becomingProviderNo" value="no">
+                <label for="becomingProviderNo">No</label>
+            </div>
+        </div>
+        <!-- Question: Want to inquire about contracted plans? -->
+        <div class="mb-3">
+            <label for="contractedPlans" class="form-label">Want to inquire about contracted plans?</label>
+            <div id="contractedPlans">
+                <input type="radio" name="contractedPlans" id="contractedPlansYes" value="yes">
+                <label for="contractedPlansYes">Yes</label>
+                <input type="radio" name="contractedPlans" id="contractedPlansNo" value="no">
+                <label for="contractedPlansNo">No</label>
+            </div>
+        </div>
+        <!-- Question: Want to be contracted with a new plan? -->
+        <div class="mb-3">
+            <label for="newPlanContract" class="form-label">Want to be contracted with a new plan?</label>
+            <div id="newPlanContract">
+                <input type="radio" name="newPlanContract" id="newPlanContractYes" value="yes">
+                <label for="newPlanContractYes">Yes</label>
+                <input type="radio" name="newPlanContract" id="newPlanContractNo" value="no">
+                <label for="newPlanContractNo">No</label>
+            </div>
+        </div>
+        <!-- Question: Want to discuss your current contract? -->
+        <div class="mb-3">
+            <label for="currentContract" class="form-label">Want to discuss your current contract?</label>
+            <div id="currentContract">
+                <input type="radio" name="currentContract" id="currentContractYes" value="yes">
+                <label for="currentContractYes">Yes</label>
+                <input type="radio" name="currentContract" id="currentContractNo" value="no">
+                <label for="currentContractNo">No</label>
+            </div>
+        </div>
+        <!-- Appointment Request-->
+        <div class="mb-3">
+            <h3>Request an Appointment:</h3>
+            <label for="groupName">Group Name</label>
+            <input type="text" class="form-control" id="groupName" required>
+            <label for="individualName">Individual's Name</label>
+            <input type="text" class="form-control" id="individualName" required>
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" required>
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            
+            <label for="requestDate">Request Date:</label>
+            <select class="form-select" id="requestDate" required>
+                <option selected>Choose...</option>
+                <option value="asap">ASAP</option>
+                <option value="thisWeek">This Week</option>
+                <option value="nextWeek">Next Week</option>
+            </select>
+            <p class="mt-3">Note: A dedicated staff member will contact you within 1-3 business days.</p>
+            <button type="submit" class="btn btn-primary mt-3">Request Appointment</button>
+        </div>
+    </form>
+</section>
+<!-- CREDENTIALING SECTION -->
+<section id="credentialing" class="questionnaire container my-5" style="display: none;">
+    <h2>Credentialing</h2>
+    <form>
+        <!-- Question: How does credentialing work at FDG? -->
+        <div class="mb-3">
+            <label for="fdgCredentialing" class="form-label">How does credentialing work at FDG?</label>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" class="form-check-input mt-0" id="fdgCredentialing">
+                <label class="form-check-label" for="fdgCredentialing" style="font-size: 1.25rem; margin-left: 10px;">Check if interested</label>
+            </div>
+        </div>
+        <!-- Question: What's the time frame to be credentialed with a Health Plan? -->
+        <div class="mb-3">
+            <label for="timeFrameCredentialing" class="form-label">What's the time frame to be credentialed with a Health Plan?</label>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" class="form-check-input mt-0" id="timeFrameCredentialing">
+                <label class="form-check-label" for="timeFrameCredentialing" style="font-size: 1.25rem; margin-left: 10px;">Check if interested</label>
+            </div>
+        </div>
+        <!-- Question: What's the status of my credentials? -->
+        <div class="mb-3">
+            <label for="statusCredentials" class="form-label">What's the status of my credentials?</label>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" class="form-check-input mt-0" id="statusCredentials">
+                <label class="form-check-label" for="statusCredentials" style="font-size: 1.25rem; margin-left: 10px;">Check if interested</label>
+            </div>
+        </div>
+        <!-- Question: Any documentation pending for credentialing? -->
+        <div class="mb-3">
+            <label for="documentationPending" class="form-label">Any documentation pending for credentialing?</label>
+            <div id="documentationPending">
+                <input type="radio" name="documentationPending" id="documentationPendingYes" value="yes">
+                <label for="documentationPendingYes">Yes</label>
+                <input type="radio" name="documentationPending" id="documentationPendingNo" value="no">
+                <label for="documentationPendingNo">No</label>
+            </div>
+        </div>
+        <!-- Appointment Request-->
+        <div class="mb-3">
+            <h3>Request an Appointment:</h3>
+            <label for="groupName">Group Name</label>
+            <input type="text" class="form-control" id="groupName" required>
+            <label for="individualName">Individual's Name</label>
+            <input type="text" class="form-control" id="individualName" required>
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" required>
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            
+            <label for="requestDate">Request Date:</label>
+            <select class="form-select" id="requestDate" required>
+                <option selected>Choose...</option>
+                <option value="asap">ASAP</option>
+                <option value="thisWeek">This Week</option>
+                <option value="nextWeek">Next Week</option>
+            </select>
+            <p class="mt-3">Note: A dedicated staff member will contact you within 1-3 business days.</p>
+            <button type="submit" class="btn btn-primary mt-3">Request Appointment</button>
+        </div>
+    </form>
+</section>
+<!-- MEDICAL CONSULTING SECTION -->
+<section id="medicalConsulting" class="questionnaire container my-5" style="display: none;">
+    <h2>Medical Consulting</h2>
+    <form>
+        <!-- Question: Pharmacy Reports? -->
+        <div class="mb-3">
+            <label for="pharmacyReports" class="form-label">Pharmacy Reports?</label>
+            <div class="d-flex align-items-center">
+                <input type="checkbox" class="form-check-input mt-0" id="pharmacyReports">
+                <label class="form-check-label" for="pharmacyReports" style="font-size: 1.25rem; margin-left: 10px;">Check if interested</label>
+            </div>
+        </div>
+        <!-- Appointment Request-->
+        <div class="mb-3">
+            <h3>Request an Appointment:</h3>
+            <label for="groupName">Group Name</label>
+            <input type="text" class="form-control" id="groupName" required>
+            <label for="individualName">Individual's Name</label>
+            <input type="text" class="form-control" id="individualName" required>
+            <label for="contactNumber">Contact Number</label>
+            <input type="tel" class="form-control" id="contactNumber" required>
+            <label for="contactEmail">Contact Email</label>
+            <input type="email" class="form-control" id="contactEmail" required>
+            
+            <label for="requestDate">Request Date:</label>
+            <select class="form-select" id="requestDate" required>
+                <option selected>Choose...</option>
+                <option value="asap">ASAP</option>
+                <option value="thisWeek">This Week</option>
+                <option value="nextWeek">Next Week</option>
+            </select>
+            <p class="mt-3">Note: A dedicated staff member will contact you within 1-3 business days.</p>
+            <button type="submit" class="btn btn-primary mt-3">Request Appointment</button>
+        </div>
+    </form>
+</section>
+
+<section class="container my-5 animate-dropdown">
+    <div class="row">
+      <!-- Left Contact Information -->
+      <div class="col-lg-6 d-flex flex-column justify-content-between">
+        <div class="left-contact">
+          <h3>Location:</h3>
+          <p>2100 Ponce De Leon Blvd. Suite 1240 <br>Coral Gables, FL 33134</p>
+          <h3>Email:</h3>
+          <p>info@fdgmso.com</p>
+          <h3>Call Us:</h3>
+          <p>(786) 471-3535</p>
+        </div>
+      </div>
+  
+      <!-- Right Map -->
+      <div class="col-lg-6">
+        <div class="map-container">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.521666859164!2d-80.26167022389839!3d25.75332740894982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b79970372093%3A0xf8c5b50a05c3ca33!2s2100%20Ponce%20de%20Leon%2C%20Coral%20Gables%2C%20FL%2033134%2C%20USA!5e0!3m2!1sen!2sco!4v1690995080915!5m2!1sen!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="footer-content text-center">
+                    <p>All right Reserved</p>
+                    <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+  
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+      
+      <script>
+  $(document).ready(function() {
+    function applyNavbarAnimation() {
+        var isNavbarCollapsed = $('.navbar-toggler').is(':visible');
+        var logoClass = isNavbarCollapsed ? 'animate-quick' : 'animate'; // for logo
+        var navLinkClass = isNavbarCollapsed ? 'animate-quick' : 'animate'; // for navlinks
+
+        $('.navbar-brand .logo').removeClass('animate animate-quick').addClass(logoClass); // Apply to logo
+        $('.navbar-brand .title, #navbarSupportedContent').removeClass('animate animate-quick').addClass(navLinkClass); // Apply to navlinks
+    }
+
+    setTimeout(applyNavbarAnimation, 100); // delay in ms
+
+    // Apply slide-in animation to banner section
+    $('.banner-section').addClass('animate');
+
+    // Apply slide-in animation to the footer
+    $('footer').addClass('animate');
+
+    $('.animate-dropdown').addClass('animate');
+
+    // Add event listeners for window resize and navbar toggler click
+    $(window).on('resize', function() {
+        applyNavbarAnimation();
+    });
+
+    $('.navbar-toggler').click(function() {
+        applyNavbarAnimation();
+    });
+
+    $('.dropdown-item').click(function() {
+        var selectedDepartment = $(this).data('department');
+
+        // Hide all questionnaires
+        $('.questionnaire').hide();
+
+        // Show the selected questionnaire
+        $('#' + selectedDepartment).show();
+    });
+});
+    </script>
+  
+  </body>
+  </html>
