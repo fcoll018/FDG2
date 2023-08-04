@@ -32,7 +32,6 @@
     font-size: 16px;
     font-weight: 700;
 }
-
 .navbar-light .navbar-brand {
     color: #00428E;
     font-size: 25px;
@@ -40,32 +39,30 @@
     font-weight: bold;
     letter-spacing: 2px;
 }
-
-@keyframes slide-in {
-    0% {
-        transform: translateX(1000%);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 .navbar-brand,
-.navbar-light .navbar-brand img, 
+.navbar-light .navbar-brand img,
 .navbar-light .navbar-brand .title {
     opacity: 0;
 }
-
 .navbar-light .navbar-brand img {
     width: 100px;
     height: auto;
 }
-
 .navbar-light .navbar-brand span {
     color: #14AEDC;
 }
+/* Add a class for the social media icons container */
+.nav-item.social-media-icons {
+	display: flex;
+	flex-wrap: wrap; /* Allow the icons to wrap to the next line on smaller screens */
+	justify-content: space-around; /* Space the icons evenly */
+}
+/* Adjust the margins and display properties for the individual social media links */
+.nav-item.social-media-icons .nav-link {
+	margin: 0 5px; /* Add horizontal margin */
+	display: inline-block; /* Set as inline-block */
+}
+
 .section-padding{
     padding: 80px 0;
 }
@@ -79,13 +76,18 @@
     background: #fff;
 }
 
-/* Final state */
+/*animations*/
+
+.nav-animate-initial {
+    opacity: 0;
+    transform: translateX(1000%);
+}
+
 .animate {
-    animation: slide-in 2s forwards;
+    animation: slide-in 1s forwards;
     opacity: 1;
 }
 
-/* Quick animation */
 .animate-quick {
     animation: slide-in 0.5s forwards; /* Change the duration as you want */
     opacity: 1;
@@ -93,11 +95,23 @@
 
 .slide-from-left {
     animation: slideLeft 2s forwards;
-  }
-  @keyframes slideLeft {
+}
+
+@keyframes slideLeft {
     from {transform: translateX(-100%);}
     to {transform: translateX(0);}
-  }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(1000%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 
 .carousel{
 	background-image: url(img/banner.png);
@@ -318,10 +332,27 @@
 
  /* contact */
 
-.left-contact {
+ .left-contact{
     background: #002C5A;
     padding: 60px;
     color: #fff;
+    height: 100%;
+}
+
+.map {
+    color: #fff;
+    height: 100%;
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.contact .row {
+    display: flex;
+    align-items: stretch; /* To make columns the same height */
 }
 
 .left-contact h3 {
@@ -347,12 +378,9 @@ label {
     background: #002C5A;
     color: #fff;
     display: inline-block;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
-.dropdown{
-    margin-bottom: 15%;
-}
 
 /*external page banner*/
 
@@ -431,40 +459,43 @@ label {
 
 /* contact us external */
 
-.map-container {
+.animate-dropdown {
     position: relative;
-    overflow: hidden;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    height: 0;
-  }
-  
-  .map {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  
-  .left-contact-container,
-  .map-container {
-    height: 400px; /* Adjust as needed */
-  }
+    z-index: 1000; /* Choose a value that will ensure the dropdown is above other elements */
+}
+
+.animate-dropdown {
+    padding-bottom: 90px; /* Adjust the value as needed */
+}
 
 /* footer */
-.map-container1{
-    margin-bottom: 3%;
-}
 
 footer {
 	background: #002C5A;
 	padding: 35px 0;
 	color: #fff;
-  }
-  .socials i {
+}
+
+.footer-location,
+.footer-content,
+.footer-map {
+	padding: 10px;
+}
+
+.socials i {
 	font-size: 25px;
 	margin: 0 15px;
-  }
+}
+
+.footer-location h5 {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.footer-map iframe {
+	width: 100%;
+	border: none;
+}
 
 /* services external page */
 
@@ -495,7 +526,7 @@ footer {
   }
   
   li[data-bs-toggle="collapse"]:active {
-    color: #002C5A; /* Replace with your preferred color */
+    color: #000000; /* Replace with your preferred color */
   }
   
   li[data-bs-toggle="collapse"].active {
@@ -503,19 +534,24 @@ footer {
   }
 
   .collapse p {
-    color: #002C5A; /* Replace with your preferred color for the expanded text */
+    color: #000000; /* Replace with your preferred color for the expanded text */
   }
 
   /* responsive */
+
+
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.navbar-light .navbar-brand img {
         width: 75px;
         height: auto;
     }
-
     .navbar-light .navbar-brand .title div,
     .navbar-light .navbar-brand .title span {
         font-size: 18px;
+    }
+    .nav-item.social-media-icons {
+        flex-direction: row; /* Align horizontally */
     }
 	.about-text h2 {
 		margin: 20px 0;
@@ -564,15 +600,17 @@ footer {
         width: 50px;
         height: auto;
     }
-
     .navbar-light .navbar-brand .title div,
     .navbar-light .navbar-brand .title span {
         font-size: 14px;
     }
-
-	.navbar-nav {
-		text-align: center;
-	}
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-item.social-media-icons {
+        flex-direction: column; /* Align vertically */
+    }
+    
 	.carousel-caption {
         bottom: 295px;
         width: 90%;  /* Adjust the width for smaller screens */
@@ -632,20 +670,16 @@ footer {
 	  .banner-content p {
 		font-size: 14px;
 	  }
-
     .card-body {
         display: grid;  /* change from flex to grid */
         grid-template-rows: auto 1fr auto;  /* create 3 grid rows */
     }
-
     .btn {
         grid-row-start: 3;  /* assign the button to the third grid row */
     }
-
     .card-content {
         min-height: 180px; /* Adjust this value according to your needs */
     }
-
     .left-contact-container,
     .map-container {
         height: 200px; /* Adjust to your preference for this screen size */
