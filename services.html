@@ -14,27 +14,27 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
-			<a class="navbar-brand animate d-flex align-items-center" href="index.html#home">
-				<img class="logo animate" src="img/floridadoctorsgroup.png" alt="Logo" width="100" height="100">
-				<div class="title animate">
+			<a class="navbar-brand animate d-flex align-items-center" href="#home">
+				<img class="logo nav-animate-initial" src="img/floridadoctorsgroup.png" alt="Logo" width="100" height="100">
+				<div class="title nav-animate-initial">
 					<span>Florida</span>
 					<div>DOCTORS</div>
 					<div>GROUP</div>
 				</div>
 			</a>
-			<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+			<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler animate" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse navbar-animation" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse navbar-animation nav-animate-initial" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
 						<a class="nav-link" href="index.html#home">Home</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="index.html#about">About Us</a>
+						<a class="nav-link" href="aboutus.html">About Us</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="index.html#services">Services</a>
+						<a class="nav-link" href="services.html">Services</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="index.html#ahp">Affiliated Health Plans</a>
@@ -42,33 +42,19 @@
 					<li class="nav-item">
 						<a class="nav-link" href="contactus.html">Contact Us</a>
 					</li>
-          <li class="nav-item">
-						<a class="nav-link" href="">
-						<i class="fa fa-facebook social-icon" ></i> 
-						</a>
-					</li>					
-					<li class="nav-item">
-						<a class="nav-link" href="">
-						<i class="fa fa-instagram social-icon" href=""></i> 
-						</a>
-					</li>					
-                    <li class="nav-item">
-						<a class="nav-link" href="">
-						<i class="fa fa-twitter social-icon" href=""></i>
-						</a>
-					</li> 					
-                    <li class="nav-item">
-						<a class="nav-link" href="">
-						<i class="fa fa-linkedin social-icon" href=""></i>
-						</a>					
-					</li>
+                    <li class="nav-item social-media-icons">
+						<a class="nav-link" href=""><i class="fa fa-facebook social-icon"></i></a>
+						<a class="nav-link" href=""><i class="fa fa-instagram social-icon"></i></a>
+						<a class="nav-link" href=""><i class="fa fa-twitter social-icon"></i></a>
+						<a class="nav-link" href=""><i class="fa fa-linkedin social-icon"></i></a>
+					</li>	
 				</ul>
 			</div>
 		</div>
 	</nav>
 
     <!-- Services Banner Section -->
-<section class="banner-section">
+<section class="banner-section nav-animate-initial">
     <div class="container text-center">
       <div class="banner-content">
         <h2>Our <span>Services</span></h2>
@@ -77,220 +63,313 @@
     </div>
   </section>
 
-    <!-- Services Section -->
-    <section class="services-section py-5 animate">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-3">
+   <!-- Services Section -->
+<section class="services-section py-5 nav-animate-initial animate">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-3">
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <!-- Pills go here -->
-                <a class="nav-link active" id="v-pills-service1-tab" data-bs-toggle="pill" href="#v-pills-service1" role="tab" aria-controls="v-pills-service1" aria-selected="true">Revenue Cycle Management</a>
-                <a class="nav-link" id="v-pills-service2-tab" data-bs-toggle="pill" href="#v-pills-service2" role="tab" aria-controls="v-pills-service2" aria-selected="false">Risk & Operational Management</a>
-                <a class="nav-link" id="v-pills-service3-tab" data-bs-toggle="pill" href="#v-pills-service3" role="tab" aria-controls="v-pills-service3" aria-selected="false">Tools & Equipment</a>
-                <a class="nav-link" id="v-pills-service4-tab" data-bs-toggle="pill" href="#v-pills-service4" role="tab" aria-controls="v-pills-service4" aria-selected="false">Marketing</a>
-                <a class="nav-link" id="v-pills-service5-tab" data-bs-toggle="pill" href="#v-pills-service5" role="tab" aria-controls="v-pills-service5" aria-selected="false">EMR System</a>
-                <a class="nav-link" id="v-pills-service6-tab" data-bs-toggle="pill" href="#v-pills-service6" role="tab" aria-controls="v-pills-service6" aria-selected="false">Training & Education</a>
-                <a class="nav-link" id="v-pills-service7-tab" data-bs-toggle="pill" href="#v-pills-service7" role="tab" aria-controls="v-pills-service7" aria-selected="false">Reports & Analytics</a>
-                <a class="nav-link" id="v-pills-service8-tab" data-bs-toggle="pill" href="#v-pills-service8" role="tab" aria-controls="v-pills-service8" aria-selected="false">Pharmacy Services</a>
+                  <!-- Pills go here -->
+                  <a class="nav-link active" id="v-pills-service1-tab" data-bs-toggle="pill" href="#v-pills-service1" role="tab" aria-controls="v-pills-service1" aria-selected="true">Revenue Cycle Management</a>
+                  <a class="nav-link" id="v-pills-service2-tab" data-bs-toggle="pill" href="#v-pills-service2" role="tab" aria-controls="v-pills-service2" aria-selected="false">Risk & Operational Management</a>
+                  <a class="nav-link" id="v-pills-service3-tab" data-bs-toggle="pill" href="#v-pills-service3" role="tab" aria-controls="v-pills-service3" aria-selected="false">Tools & Equipment</a>
+                  <a class="nav-link" id="v-pills-service4-tab" data-bs-toggle="pill" href="#v-pills-service4" role="tab" aria-controls="v-pills-service4" aria-selected="false">Marketing</a>
+                  <a class="nav-link" id="v-pills-service5-tab" data-bs-toggle="pill" href="#v-pills-service5" role="tab" aria-controls="v-pills-service5" aria-selected="false">EMR System</a>
+                  <a class="nav-link" id="v-pills-service6-tab" data-bs-toggle="pill" href="#v-pills-service6" role="tab" aria-controls="v-pills-service6" aria-selected="false">Training & Education</a>
+                  <a class="nav-link" id="v-pills-service7-tab" data-bs-toggle="pill" href="#v-pills-service7" role="tab" aria-controls="v-pills-service7" aria-selected="false">Reports & Analytics</a>
+                  <a class="nav-link" id="v-pills-service8-tab" data-bs-toggle="pill" href="#v-pills-service8" role="tab" aria-controls="v-pills-service8" aria-selected="false">Pharmacy Services</a>
               </div>
-            </div>
-            <div class="col-md-9">
+          </div>
+          <div class="col-md-9">
               <div class="tab-content" id="v-pills-tabContent">
-                <div class="tab-pane fade show active" id="v-pills-service1" role="tabpanel" aria-labelledby="v-pills-service1-tab">
-                  <!-- Add content about this service -->
-                  <h2>Billing, Coding & Collection services with live support and expert coding</h2>
-                  <ul>
-                    <li data-bs-toggle="collapse" data-bs-target="#pills-service1-sub1" aria-expanded="false" aria-controls="pills-service1-sub1">Billing, Coding & Collection services with live support and expert coding</li>
-                    <div id="pills-service1-sub1" class="collapse">
-                      <p>Comprehensive billing, coding, and collection services provided. Our experienced team handles the complexities of billing and coding, reducing errors and increasing revenue for your healthcare organization.</p>
+                  <div class="tab-pane fade show active" id="v-pills-service1" role="tabpanel" aria-labelledby="v-pills-service1-tab">
+                      <!-- Add content about this service -->
+                      <h2>Billing, Coding & Collection services with live support and expert coding</h2>
+                      <div class="accordion" id="service1Accordion">
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="service1-heading1">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service1-sub1" aria-expanded="false">
+                                      Billing, Coding & Collection services with live support and expert coding
+                                  </button>
+                              </h2>
+                              <div id="pills-service1-sub1" class="accordion-collapse collapse">
+                                  <div class="accordion-body">
+                                      <p>Comprehensive billing, coding, and collection services provided. Our experienced team handles the complexities of billing and coding, reducing errors and increasing revenue for your healthcare organization.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="accordion-item">
+                              <h2 class="accordion-header" id="service1-heading2">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service1-sub2" aria-expanded="false">
+                                      Regulatory Compliance
+                                  </button>
+                              </h2>
+                              <div id="pills-service1-sub2" class="accordion-collapse collapse">
+                                  <div class="accordion-body">
+                                      <p>Comprehensive oversight and management of compliance requirements. We provide expert oversight and management to address all compliance-related matters effectively.</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- More content... -->
+                      </div>
+                  </div>
+                  <div class="tab-pane fade" id="v-pills-service2" role="tabpanel" aria-labelledby="v-pills-service2-tab">
+                    <h2>Risk & Operational Management</h2>
+                    <div class="accordion" id="service2Accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="service2-heading1">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service2-sub1" aria-expanded="false">
+                                    Oversight and Management for compliance, credentialing, risk identification, and utilization management
+                                </button>
+                            </h2>
+                            <div id="pills-service2-sub1" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Comprehensive oversight and management of compliance requirements. We provide comprehensive oversight and management of compliance requirements, ensuring that your organization adheres to all industry standards and government regulations.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="service2-heading2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service2-sub2" aria-expanded="false">
+                                    Utilization Management / Referrals / Pharmacy Reports for Hospitals and Facilities
+                                </button>
+                            </h2>
+                            <div id="pills-service2-sub2" class="accordion-collapse collapse">
+                                <div class="accordion-body">
+                                    <p>Expert utilization management services to optimize referrals and patient care. Our experts collaborate with your team to optimize the utilization of resources and ensure efficient patient care.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- More content... -->
                     </div>
-                    <li data-bs-toggle="collapse" data-bs-target="#pills-service1-sub2" aria-expanded="false" aria-controls="pills-service1-sub2">Regulatory Compliance</li>
-                    <div id="pills-service1-sub2" class="collapse">
-                      <p>Comprehensive oversight and management of compliance requirements. We provide expert oversight and management to address all compliance-related matters effectively.</p>
+                </div>                
+                <div class="tab-pane fade" id="v-pills-service3" role="tabpanel" aria-labelledby="v-pills-service3-tab">
+                  <h2>Tools & Equipment</h2>
+                  <div class="accordion" id="service3Accordion">
+                      <div class="accordion-item">
+                          <h2 class="accordion-header" id="service3-heading1">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service3-sub1" aria-expanded="false">
+                                  Guidance on medical equipment purchase and services
+                              </button>
+                          </h2>
+                          <div id="pills-service3-sub1" class="accordion-collapse collapse">
+                              <div class="accordion-body">
+                                  <p>Expert guidance on purchasing medical equipment for medical centers and offices. We provide valuable insights into the best options available in the market.</p>
+                              </div>
+                          </div>
+                      </div>
+                      <!-- More content... -->
+                  </div>
+              </div>              
+              <div class="tab-pane fade" id="v-pills-service4" role="tabpanel" aria-labelledby="v-pills-service4-tab">
+                <h2>Marketing</h2>
+                <div class="accordion" id="service4Accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="service4-heading1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service4-sub1" aria-expanded="false">
+                                Comprehensive support for events, design, exhibitions, and advertising to boost clinic visibility
+                            </button>
+                        </h2>
+                        <div id="pills-service4-sub1" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>Our Marketing service is dedicated to enhancing the visibility and recognition of your clinic or medical center.</p>
+                            </div>
+                        </div>
                     </div>
                     <!-- More content... -->
-                  </ul>
                 </div>
-                <div class="tab-pane fade" id="v-pills-service2" role="tabpanel" aria-labelledby="v-pills-service2-tab">
-                    <!-- Add content about this service -->
-                    <h2>Risk & Operational Management</h2>
-                    <ul>
-                      <li data-bs-toggle="collapse" data-bs-target="#pills-service2-sub1" aria-expanded="false" aria-controls="pills-service2-sub1">Oversight and Management for compliance, credentialing, risk identification, and utilization management</li>
-                      <div id="pills-service2-sub1" class="collapse">
-                        <p>Comprehensive oversight and management of compliance requirements. We provide comprehensive oversight and management of compliance requirements, ensuring that your organization adheres to all industry standards and government regulations.</p>
+            </div>            
+            <div class="tab-pane fade" id="v-pills-service5" role="tabpanel" aria-labelledby="v-pills-service5-tab">
+              <h2>EMR System</h2>
+              <div class="accordion" id="service5Accordion">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="service5-heading1">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service5-sub1" aria-expanded="false">
+                              Guidance and support for EMR system implementation
+                          </button>
+                      </h2>
+                      <div id="pills-service5-sub1" class="accordion-collapse collapse">
+                          <div class="accordion-body">
+                              <p>Expert guidance for selecting the most suitable EMR system. Our team helps you select the most suitable EMR system for your specific needs.</p>
+                          </div>
                       </div>
-                      <li data-bs-toggle="collapse" data-bs-target="#pills-service2-sub2" aria-expanded="false" aria-controls="pills-service2-sub2">Utilization Management / Referrals / Pharmacy Reports for Hospitals and Facilities</li>
-                      <div id="pills-service2-sub2" class="collapse">
-                        <p>Expert utilization management services to optimize referrals and patient care. Our experts collaborate with your team to optimize the utilization of resources and ensure efficient patient care.</p>
-                      </div>
-                      <!-- More content... -->
-                    </ul>
                   </div>
-                <div class="tab-pane fade" id="v-pills-service3" role="tabpanel" aria-labelledby="v-pills-service3-tab">
-                    <!-- Add content about this service -->
-                    <h2>Tools & Equipment</h2>
-                    <ul>
-                      <li data-bs-toggle="collapse" data-bs-target="#pills-service3-sub1" aria-expanded="false" aria-controls="pills-service3-sub1">Guidance on medical equipment purchase and services</li>
-                      <div id="pills-service3-sub1" class="collapse">
-                        <p>Expert guidance on purchasing medical equipment for medical centers and offices. We provide valuable insights into the best options available in the market.</p>
+                  <!-- More content... -->
+              </div>
+          </div>          
+          <div class="tab-pane fade" id="v-pills-service6" role="tabpanel" aria-labelledby="v-pills-service6-tab">
+            <h2>Training & Education</h2>
+            <div class="accordion" id="service6Accordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="service6-heading1">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service6-sub1" aria-expanded="false">
+                            Comprehensive training on accurate coding, documentation, and quality improvement
+                        </button>
+                    </h2>
+                    <div id="pills-service6-sub1" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <p>We offer comprehensive training on accurate coding, thorough documentation, and various quality improvement initiatives. By investing in training and education, your healthcare organization can enhance its capabilities, improve patient care outcomes, and create a more efficient and engaged workforce.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- More content... -->
+            </div>
+        </div>        
+        <div class="tab-pane fade" id="v-pills-service7" role="tabpanel" aria-labelledby="v-pills-service7-tab">
+          <h2>Reports & Analytics</h2>
+          <div class="accordion" id="service7Accordion">
+              <div class="accordion-item">
+                  <h2 class="accordion-header" id="service7-heading1">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service7-sub1" aria-expanded="false">
+                          Providing quality and performance reports to MSO Providers
+                      </button>
+                  </h2>
+                  <div id="pills-service7-sub1" class="accordion-collapse collapse">
+                      <div class="accordion-body">
+                          <p>Detailed reports on various quality and performance measures. These reports include data on emergency room utilization, medication adherence, readmission rates, and identification of gaps in patient care.</p>
                       </div>
-                      <!-- More content... -->
-                    </ul>
-                  </div>
-                <div class="tab-pane fade" id="v-pills-service4" role="tabpanel" aria-labelledby="v-pills-service4-tab">
-                    <!-- Add content about this service -->
-                    <h2>Marketing</h2>
-                    <ul>
-                      <li data-bs-toggle="collapse" data-bs-target="#pills-service4-sub1" aria-expanded="false" aria-controls="pills-service4-sub1">Comprehensive support for events, design, exhibitions, and advertising to boost clinic visibility</li>
-                      <div id="pills-service4-sub1" class="collapse">
-                        <p>Our Marketing service is dedicated to enhancing the visibility and recognition of your clinic or medical center.</p>
-                      </div>
-                      <!-- More content... -->
-                    </ul>
-                  </div>
-                <div class="tab-pane fade" id="v-pills-service5" role="tabpanel" aria-labelledby="v-pills-service5-tab">
-                    <!-- Add content about this service -->
-                    <h2>EMR System</h2>
-                    <ul>
-                      <li data-bs-toggle="collapse" data-bs-target="#pills-service5-sub1" aria-expanded="false" aria-controls="pills-service5-sub1">Guidance and support for EMR system implementation</li>
-                      <div id="pills-service5-sub1" class="collapse">
-                        <p>Expert guidance for selecting the most suitable EMR system. Our team helps you select the most suitable EMR system for your specific needs.</p>
-                      </div>
-                      <!-- More content... -->
-                    </ul>
-                  </div>
-                <div class="tab-pane fade" id="v-pills-service6" role="tabpanel" aria-labelledby="v-pills-service6-tab">
-                    <!-- Add content about this service -->
-                    <h2>Training & Education</h2>
-                    <ul>
-                      <li data-bs-toggle="collapse" data-bs-target="#pills-service6-sub1" aria-expanded="false" aria-controls="pills-service6-sub1">Comprehensive training on accurate coding, documentation, and quality improvement</li>
-                      <div id="pills-service6-sub1" class="collapse">
-                        <p>We offer comprehensive training on accurate coding, thorough documentation, and various quality improvement initiatives. By investing in training and education, your healthcare organization can enhance its capabilities, improve patient care outcomes, and create a more efficient and engaged workforce.</p>
-                      </div>
-                      <!-- More content... -->
-                    </ul>
-                  </div>
-                <div class="tab-pane fade" id="v-pills-service7" role="tabpanel" aria-labelledby="v-pills-service7-tab">
-                    <!-- Add content about this service -->
-                    <h2>Reports & Analytics</h2>
-                    <ul>
-                      <li data-bs-toggle="collapse" data-bs-target="#pills-service7-sub1" aria-expanded="false" aria-controls="pills-service7-sub1">Providing quality and performance reports to MSO Providers</li>
-                      <div id="pills-service7-sub1" class="collapse">
-                        <p>Detailed reports on various quality and performance measures. These reports include data on emergency room utilization, medication adherence, readmission rates, and identification of gaps in patient care.</p>
-                      </div>
-                      <!-- More content... -->
-                    </ul>
-                  </div>
-                <div class="tab-pane fade" id="v-pills-service8" role="tabpanel" aria-labelledby="v-pills-service8-tab">
-                    <!-- Add content about this service -->
-                    <h2>Pharmacy Services</h2>
-                    <ul>
-                      <li data-bs-toggle="collapse" data-bs-target="#pills-service8-sub1" aria-expanded="false" aria-controls="pills-service8-sub1">Strategies for drug formulary, Medication Therapy Management, and drug benefits optimization</li>
-                      <div id="pills-service8-sub1" class="collapse">
-                        <p>Our Pharmacy Services department employs a range of strategic initiatives, including managing drug formularies and implementing Medication Therapy Management (MTM) programs. Our ultimate goal is to enhance patient safety and improve overall health outcomes for all valued health plan members.</p>
-                      </div>
-                      <!-- More content... -->
-                    </ul>
                   </div>
               </div>
-            </div>
+              <!-- More content... -->
           </div>
+      </div>      
+      <div class="tab-pane fade" id="v-pills-service8" role="tabpanel" aria-labelledby="v-pills-service8-tab">
+        <h2>Pharmacy Services</h2>
+        <div class="accordion" id="service8Accordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="service8-heading1">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pills-service8-sub1" aria-expanded="false">
+                        Strategies for drug formulary, Medication Therapy Management, and drug benefits optimization
+                    </button>
+                </h2>
+                <div id="pills-service8-sub1" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <p>Our Pharmacy Services department employs a range of strategic initiatives, including managing drug formularies and implementing Medication Therapy Management (MTM) programs. Our ultimate goal is to enhance patient safety and improve overall health outcomes for all valued health plan members.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- More content... -->
         </div>
-      </section>
+    </div>    
+  </section>
       
-      
-  <footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="footer-content text-center">
-					
-						<p class="socials">
-							<i class="fa fa-facebook"></i>
-							<i class="fa fa-instagram"></i>
-							<i class="fa fa-twitter"></i>
-							<i class="fa fa-linkedin"></i>
-						</p>
-            <p>All right Reserved</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
+<!-- Footer Section -->
+<footer class="nav-animate-initial">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="footer-location">
+                    <h5>Our Location</h5>
+                    <p>2100 Ponce De Leon Blvd. Suite 1240</p>
+                    <p>Coral Gables, FL 33134</p>
+                    <p>Phone: (786) 471-3535</p>
+                    <p>Email: info@fdgmso.com</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer-content text-center">
+                    <p class="socials">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </p>
+                    <p>All right Reserved</p>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.521813045945!2d-80.26167022459984!3d25.75332257735722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7fea5c1a153%3A0x7340d6ca42797b35!2sFlorida%20Doctors%20Group!5e0!3m2!1sen!2sco!4v1691111767976!5m2!1sen!2sco" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
     
-    <script>
-     function applyNavbarAnimation() {
-    var isNavbarCollapsed = $('.navbar-toggler').is(':visible');
-    var logoClass = isNavbarCollapsed ? 'animate-quick' : 'animate'; // for logo
-    var navLinkClass = isNavbarCollapsed ? 'animate-quick' : 'animate'; // for navlinks
+<script>
+    function debounce(func, wait) {
+    var timeout;
+    return function () {
+        var context = this, args = arguments;
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+        func.apply(context, args);
+        }, wait);
+    };
+}
 
-    $('.navbar-brand .logo').removeClass('animate animate-quick').addClass(logoClass); // Apply to logo
-    $('.navbar-brand .title, #navbarSupportedContent').removeClass('animate animate-quick').addClass(navLinkClass); // Apply to navlinks
+function applyNavbarAnimation() {
+    var isNavbarCollapsed = $('.navbar-toggler').is(':visible');
+    var logoClass = isNavbarCollapsed ? 'animate-quick' : 'animate';
+    var navLinkClass = isNavbarCollapsed ? 'animate-quick' : 'animate';
+
+    $('.navbar-brand .logo, .navbar-brand .title, #navbarSupportedContent').removeClass('nav-animate-initial animate animate-quick').addClass(navLinkClass);
 }
 
 $(window).on('load', function() {
-    // Check the current URL's query parameters and activate the corresponding navigation link and tab pane, if they exist
-    var urlParams = new URLSearchParams(window.location.search);
-    var tabId = urlParams.get('tab');
-    if (tabId) {
-        $('.nav-link.active, .tab-pane.active').removeClass('active show');
-        $(`#${tabId}`).addClass('active show');
-        $(`.nav-link[href="#${tabId}"]`).addClass('active');
-    }
+  // Check the current URL's query parameters and activate the corresponding navigation link and tab pane, if they exist
+  var urlParams = new URLSearchParams(window.location.search);
+  var tabId = urlParams.get('tab');
+  if (tabId) {
+      $('.nav-link.active, .tab-pane.active').removeClass('active show');
+      $(`#${tabId}`).addClass('active show');
+      $(`.nav-link[href="#${tabId}"]`).addClass('active');
+  }
 
-    // Add animations to the logo, title, and navigation bar after a delay
-    setTimeout(applyNavbarAnimation, 100); // delay in ms
+  // Add animations to the logo, title, and navigation bar after a delay
+  setTimeout(applyNavbarAnimation, 100); // delay in ms
 
-    // Apply animations to other sections on the services page
-    $('.service-section').addClass('animate'); // Modify the selector as needed
+  // Apply animations to other sections on the services page
+  $('.service-section').removeClass('nav-animate-initial').addClass('animate');
 
-    // Apply slide-in animation to the footer
-    $('footer').addClass('animate');
+  // Apply slide-in animation to the footer
+  $('footer').removeClass('nav-animate-initial').addClass('animate');
 
-    // Apply slide-in animation to banner section
-    $('.banner-section').addClass('animate');
+  // Apply slide-in animation to banner section
+  $('.banner-section').removeClass('nav-animate-initial').addClass('animate');
 
-    $('li[data-bs-toggle="collapse"]').on('click', function() {
-        $(this).toggleClass('active');
-    });
+  $('li[data-bs-toggle="collapse"]').on('click', function() {
+      $(this).toggleClass('active');
+  });
 
-    $('a[href^="#"]').on('click', function(e) {
-        e.preventDefault();
+  $('a[href^="#"]').on('click', function(e) {
+      e.preventDefault();
 
-        var targetId = this.hash;
-        var target = $(targetId);
+      var targetId = this.hash;
+      var target = $(targetId);
 
-        var animateScroll = function() {
-            var navbarHeight = $('.navbar').outerHeight();  // Moved inside the animateScroll function
-            var $targetOffsetTop = (targetId === '#home') ? 0 : target.offset().top - navbarHeight;
+      var animateScroll = function() {
+          var navbarHeight = $('.navbar').outerHeight();
+          var $targetOffsetTop = (targetId === '#home') ? 0 : target.offset().top - navbarHeight;
 
-            $('html, body').stop().animate({
-                scrollTop: $targetOffsetTop
-            }, 500, 'swing');
-        };
+          $('html, body').stop().animate({
+              scrollTop: $targetOffsetTop
+          }, 500, 'swing');
+      };
 
-        var navbarCollapse = $('#navbarSupportedContent');
-        if (navbarCollapse.is(':visible') && $('.navbar-toggler').is(':visible')) {
-            navbarCollapse.one('hidden.bs.collapse', animateScroll);
-            navbarCollapse.collapse('hide');
-        } else {
-            animateScroll();
-        }
-    });
+      var navbarCollapse = $('#navbarSupportedContent');
+      if (navbarCollapse.is(':visible') && $('.navbar-toggler').is(':visible')) {
+          navbarCollapse.one('hidden.bs.collapse', animateScroll);
+          navbarCollapse.collapse('hide');
+      } else {
+          animateScroll();
+      }
+  });
 });
 
 // Add event listeners for window resize and navbar toggler click
-$(window).on('resize', function() {
-    applyNavbarAnimation();
-});
+$(window).on('resize', debounce(function() {
+  applyNavbarAnimation();
+}, 100));
 
 $('.navbar-toggler').click(function() {
-    applyNavbarAnimation();
+  applyNavbarAnimation();
 });
   </script>
   
