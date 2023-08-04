@@ -9,24 +9,24 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 		<div class="container">
 			<a class="navbar-brand animate d-flex align-items-center" href="#home">
-				<img class="logo animate" src="img/floridadoctorsgroup.png" alt="Logo" width="100" height="100">
-				<div class="title animate">
+				<img class="logo nav-animate-initial" src="img/floridadoctorsgroup.png" alt="Logo" width="100" height="100">
+				<div class="title nav-animate-initial">
 					<span>Florida</span>
 					<div>DOCTORS</div>
 					<div>GROUP</div>
 				</div>
 			</a>
-			<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+			<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler animate" data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse navbar-animation" id="navbarSupportedContent">
+			<div class="collapse navbar-collapse navbar-animation nav-animate-initial" id="navbarSupportedContent">
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
 						<a class="nav-link" href="#home">Home</a>
@@ -43,26 +43,12 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#contact">Contact Us</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="">
-						<i class="fa fa-facebook social-icon" ></i> 
-						</a>
+					<li class="nav-item social-media-icons">
+						<a class="nav-link" href=""><i class="fa fa-facebook social-icon"></i></a>
+						<a class="nav-link" href=""><i class="fa fa-instagram social-icon"></i></a>
+						<a class="nav-link" href=""><i class="fa fa-twitter social-icon"></i></a>
+						<a class="nav-link" href=""><i class="fa fa-linkedin social-icon"></i></a>
 					</li>					
-					<li class="nav-item">
-						<a class="nav-link" href="">
-						<i class="fa fa-instagram social-icon" href=""></i> 
-						</a>
-					</li>					
-                    <li class="nav-item">
-						<a class="nav-link" href="">
-						<i class="fa fa-twitter social-icon" href=""></i>
-						</a>
-					</li> 					
-                    <li class="nav-item">
-						<a class="nav-link" href="">
-						<i class="fa fa-linkedin social-icon" href=""></i>
-						</a>					
-					</li>
 				</ul>
 			</div>
 		</div>
@@ -105,7 +91,7 @@
 </div>
 
 
-	<div class="about-area section-padding hide-scroll" id="about">
+	<div class="about-area section-padding hide-scroll" id="about" data-aos="fade-right">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-sm-12">
@@ -127,7 +113,7 @@
 
 <!-- services -->
 
-<div class="services section-padding hide-scroll" id="services">
+<div class="services section-padding hide-scroll" id="services" data-aos="fade-up">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -260,7 +246,7 @@
 
 	<!--Affiliated Health Plans-->
 
-	<div class="ahp section-padding" id="ahp">
+	<div class="ahp section-padding" id="ahp" data-aos="fade-left">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -347,7 +333,7 @@
 	</div>
 	
 
-	<div class="testimonial section-padding" id="testi">
+	<div class="testimonial section-padding" id="testi" data-aos="flip-left">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12">
@@ -393,45 +379,45 @@
 	</div>
 
 	<!-- contact -->
-	<div class="contact section-padding" id="contact">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12">
-					<div class="section-header text-center">
-						<h3>Contact Us</h3>
-						<a href="contactus.html" class="btn btn-appointment">Request an Appointment</a>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-5 col-sm-12">
-					<div class="left-contact">
-						<h3>Location:</h3>
-						<p>2100 Ponce De Leon Blvd. Suite 1240 <br>Coral Gables, FL 33134</p>
-						<h3>Email:</h3>
-						<p>info@fdgmso.com</p>
-						<h3>Call Us:</h3>
-						<p>(786) 471-3535</p>
-					</div>					
-				</div>
-				  <!-- Right Map -->
-				  <div class="col-lg-6">
-					<div class="map-container">
-						<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.521666859164!2d-80.26167022389839!3d25.75332740894982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b79970372093%3A0xf8c5b50a05c3ca33!2s2100%20Ponce%20de%20Leon%2C%20Coral%20Gables%2C%20FL%2033134%2C%20USA!5e0!3m2!1sen!2sco!4v1690995080915!5m2!1sen!2sco" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					</div>
-				  </div>
+<!-- contact -->
+<div class="contact section-padding" id="contact" data-aos="flip-right">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="section-header text-center">
+					<h3>Contact Us</h3>
+					<a href="contactus.html" class="btn btn-appointment">Request an Appointment</a>
 				</div>
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-lg-5 col-sm-12">
+				<div class="left-contact">
+					<h3>Location:</h3>
+					<p>2100 Ponce De Leon Blvd. Suite 1240 <br>Coral Gables, FL 33134</p>
+					<h3>Email:</h3>
+					<p>info@fdgmso.com</p>
+					<h3>Call Us:</h3>
+					<p>(786) 471-3535</p>
+				</div>					
+			</div>
+			<div class="col-lg-6 offset-lg-1 col-sm-12">
+				<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.521813045945!2d-80.26167022459984!3d25.75332257735722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b7fea5c1a153%3A0x7340d6ca42797b35!2sFlorida%20Doctors%20Group!5e0!3m2!1sen!2sco!4v1691111767976!5m2!1sen!2sco" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>			
+			</div>
+		</div>
 	</div>
-	
+</div>
 
+
+
+	<!-- Footer Section -->
 	<footer>
 		<div class="container">
-			
+			<div class="row">
 				<div class="col-lg-12">
 					<div class="footer-content text-center">
-						
 						<p class="socials">
 							<i class="fa fa-facebook"></i>
 							<i class="fa fa-instagram"></i>
@@ -446,35 +432,32 @@
 	</footer>
 
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
-	</script> 
-	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js">
-	</script> 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js">
-	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script> 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
 <script>
-	function applyNavbarAnimation() {
+    function applyNavbarAnimation() {
     var isNavbarCollapsed = $('.navbar-toggler').is(':visible');
-    var logoClass = isNavbarCollapsed ? 'animate-quick' : 'animate'; // for logo
-    var navLinkClass = isNavbarCollapsed ? 'animate-quick' : 'animate'; // for navlinks
+    var logoClass = isNavbarCollapsed ? 'animate-quick' : 'animate';
+    var navLinkClass = isNavbarCollapsed ? 'animate-quick' : 'animate';
 
-    $('.navbar-brand .logo').removeClass('animate animate-quick').addClass(logoClass); // Apply to logo
-    $('.navbar-brand .title, #navbarSupportedContent').removeClass('animate animate-quick').addClass(navLinkClass); // Apply to navlinks
+    $('.navbar-brand .logo, .navbar-brand .title, #navbarSupportedContent').removeClass('nav-animate-initial animate animate-quick').addClass(navLinkClass);
 }
 
-$(window).on('load', function() {
-    // Add animations to the logo, title, and navigation bar after a delay
-    setTimeout(applyNavbarAnimation, 100); // delay in ms
+$(window).on('load', function () {
+    AOS.init();
+    setTimeout(applyNavbarAnimation, 100);
 
-    $('a[href^="#"]').on('click', function(e) {
+    $('a[href^="#"]').on('click', function (e) {
         e.preventDefault();
 
         var targetId = this.hash;
         var target = $(targetId);
 
-        var animateScroll = function() {
-            var navbarHeight = $('.navbar').outerHeight();  // Moved inside the animateScroll function
+        var animateScroll = function () {
+            var navbarHeight = $('.navbar').outerHeight();
             var $targetOffsetTop = (targetId === '#home') ? 0 : target.offset().top - navbarHeight;
 
             $('html, body').stop().animate({
@@ -490,54 +473,16 @@ $(window).on('load', function() {
             animateScroll();
         }
     });
-
-    $(window).scroll(function() {
-        var hTServices = $('#services').offset().top - 1500,
-            hHServices = $('#services').outerHeight(),
-            hTAbout = $('#about').offset().top,
-            hHAbout = $('#about').outerHeight(),
-            wH = $(window).height(),
-            wS = $(this).scrollTop();
-        
-        if (wS > (hTServices+hHServices-wH*2)){
-            $('.our-services').addClass('animated fadeInUp');
-            $('.our-services-caption').addClass('animated fadeInUp').css('animation-delay', '1s');
-            $('.card').each(function(i){
-                $(this).css('animation-delay', (i * 0.2) + 's').addClass('animated').addClass(i % 2 === 0 ? 'fadeInLeft' : 'fadeInRight');
-            });
-        }
-
-        if (wS > (hTAbout+hHAbout-wH-150)){
-            $('.about-text').addClass('animated fadeInUp');
-            $('.img-area').addClass('animated fadeInLeft');
-        }
-
-        var sections = [
-            { id: '#ahp', class: 'fadeInRight', delay: '0s' },
-            { id: '#testi', class: 'fadeInUp', delay: '0s' },
-            { id: '#contact', class: 'fadeInLeft', delay: '0s' },
-        ];
-
-        sections.forEach(function(section) {
-            var hT = $(section.id).offset().top,
-                hH = $(section.id).outerHeight();
-
-            if (wS > (hT+hH-wH*2)){
-                $(section.id).addClass('animated ' + section.class).css('animation-delay', section.delay);
-            }
-        });
-    });
 });
 
-// Add event listeners for window resize and navbar toggler click
-$(window).on('resize', function() {
+$(window).on('resize', function () {
     applyNavbarAnimation();
 });
 
-$('.navbar-toggler').click(function() {
+$('.navbar-toggler').click(function () {
     applyNavbarAnimation();
 });
-	</script>
+</script>
 
 </body>
 </html>
